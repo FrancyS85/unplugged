@@ -139,6 +139,10 @@ address {
   margin: 50px 0;
 }
 
+img {
+  width: 100%;
+}
+
 /* -------------------- Base Header - Footer Styles -------------------- */
 
 header,
@@ -230,6 +234,8 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 .hero-area h1 {
