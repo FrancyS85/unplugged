@@ -143,6 +143,18 @@ img {
   width: 100%;
 }
 
+figure {
+  margin: 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 /* -------------------- Base Header - Footer Styles -------------------- */
 
 header,
@@ -156,6 +168,7 @@ footer {
 
 header {
   padding: 15px 0;
+  margin: 0;
 }
 
 header .content-wrapper {
@@ -164,6 +177,7 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
 }
 
 .header-divider {
@@ -236,6 +250,7 @@ footer .copyright {
   flex-flow: row wrap;
   background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #333;
   background-size: cover;
+  height: 500px;
 }
 
 .hero-area h1 {
@@ -265,6 +280,9 @@ aside .form{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-image: url('../img/rawpixel-800820-unsplash1.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .features h2 {
@@ -487,6 +505,16 @@ input[type=button] {
       max-width: 640px;
       margin: 100px 0;
     }
+
+    h2 {
+      font-size: 2.25em;
+      line-height: 1.333;
+    }
+  
+    h3 {
+        font-size: 1.5em;
+        line-height: 1.25;
+    }
   
     /* Header */
     header {
@@ -499,6 +527,10 @@ input[type=button] {
       justify-content: space-between;
     }
   
+    header figure {
+      width: 28%;
+    }
+
     header nav {
       width: 20%;
     }
@@ -511,6 +543,16 @@ input[type=button] {
       display: none;
     }
     /* Hero Area */
+
+    .hero-area {
+      min-height: 600px;
+    }
+  
+    .hero-area h1 {
+      font-size: 3em;
+      line-height: 1;
+      margin: 0;
+  }
   
     /* Aside */
     aside .content-wrapper {
@@ -540,13 +582,20 @@ input[type=button] {
     }
   
     /* Reviews */
+
     .reviews article {
       display: flex;
       justify-content: space-between;
     }
   
+    .reviews article figure,
     .reviews article div {
       width: 49%;
+    }
+
+    .reviews h3 {
+      width: 75%;
+      margin: 0;
     }
   
     /* Footer */
@@ -621,6 +670,20 @@ input[type=button] {
     .content-wrapper {
       max-width: 960px;
     }
+
+    h2 {
+      font-size: 2.25em;
+    }
+  
+    h3,
+    h4 {
+        font-size: 1.875em;
+    }
+  
+    p {
+        font-size: 1.125em;
+        line-height: 1.333;
+    }
   
     /* Hero */
     .hero-area h1 {
@@ -650,6 +713,14 @@ input[type=button] {
     /* Reviews */
     .reviews article div {
       width: 42%;
+    }
+  
+    .reviews h2 {
+      padding-bottom: 50px;
+    }
+  
+    footer h4 {
+      font-size: 1.875em;
     }
   
     /* ==========================================================================
