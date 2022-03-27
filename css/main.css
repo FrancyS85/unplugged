@@ -329,25 +329,41 @@ aside .form{
    About Page
    ========================================================================== */
 
-.mission {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  background: #527158;
-}
-
-.contact-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  background: #2a423a;
-}
-
-.contact-content p {
-  margin: 0;
-}
+   .mission {
+    background-color: #527158;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  
+  .map figure {
+    width: 100%;
+    height: 0; 
+    padding-bottom: 125%; 
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+  }
+  
+  .contact-section {
+    background-color: #2a423a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  
+  .contact-content p {
+    margin: 0;
+  }
 
 /* ==========================================================================
    FAQ Page
@@ -622,40 +638,33 @@ input[type=button] {
      About Page
      ========================================================================== */
   
-     .mission {
-      background-color: #527158;
+     .mission-content {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      flex-flow: row wrap;
+      padding-top: 20px;
     }
-    
+  
+    .mission-content p {
+      width: 45%;
+    }
+  
+    .contact-section .content-wrapper h2 {
+      width: 80%;
+    }
+  
+    .contact-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  
+    .contact-content h4 {
+      font-size: 1.5em;
+    }
+  
     .map figure {
-      position: relative;
-      padding-bottom: 125%;
-      height: 0;
-      width: 100%;
-      overflow: hidden;
-    }
-    
-    .map iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-    
-    .contact-section {
-      background-color: #2a423a;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: row wrap;
-    }
-    
-    .contact-content p {
-      margin: 0;
+      padding-bottom: 45.5%;
     }
   
     /* ==========================================================================
@@ -745,6 +754,10 @@ input[type=button] {
     .mission h2,
     .contact-section .content-wrapper h2 {
         width: 95%;
+    }
+
+    .map figure {
+      padding-bottom: 37.5%;
     }
   
     /* ==========================================================================
